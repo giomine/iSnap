@@ -26,6 +26,9 @@
     .gray-me{
       color: #201f22;
     }
+    .material-icons{
+      color: #ffc107;
+    }
     section {
       padding-top: 4vw;
       padding-bottom: 4vw;
@@ -40,9 +43,11 @@
       background: transparent;
     }
     @media screen and (max-width: 670px) {
-      header{
-          min-height: 500px;
-      }
+      .shoes { width: 670px; }
+      .model { height: 670px; }
+    }
+    @media screen and (max-width: 650px) {
+      .parallax-container { height: 200px; }
     }
     </style>
 
@@ -74,10 +79,10 @@
             <i class="fab fa-twitter"></i>
           </a></li>
         </ul>
-        <ul class="sidenav grey lighten-2" id="mobile-menu">
-          <li><a href="#">Photos</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul class="sidenav amber amber-accent-4" id="mobile-menu">
+          <li><a href="#photos">Photos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       </nav>
@@ -152,7 +157,7 @@
 
   <div class="parallax-container">
     <div class="parallax">
-      <img src="images/shoes.jpg" alt="" class="responsive-img">
+      <img src="images/shoes.jpg" alt="" class="responsive-img shoes">
     </div>
   </div>
 
@@ -198,7 +203,7 @@
 
   <div class="parallax-container">
     <div class="parallax">
-      <img src="images/model.jpg" alt="" class="responsive-img">
+      <img src="images/model.jpg" alt="" class="responsive-img model">
     </div>
   </div>
 
